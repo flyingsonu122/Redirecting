@@ -1,4 +1,6 @@
-<br><br><br><br><br><br>
+This redirects to [singlebucks.blogspot.com](https://singlebucks.blogspot.com/)
+
+<br><br><br><br>
 
 
 **MIT &copy; [Sonu kumar kushwaha](https://github.com/flyingsonu122)**
