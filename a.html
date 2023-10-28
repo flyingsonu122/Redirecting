@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sonu Kumar Kushwaha</title>
+   
+</head>
+<body>
+    <h1>Sonu Kumar Kushwaha</h1>
+    <a id="redirectLink" href="https://singlebucks.blogspot.com/2023/06/made-personal-finance-tracker-website.html">Click here if you are not redirected.</a>
+
+    <script>
+        // Array of your links
+        var links = [
+            "https://sonukushwaha.com",
+            "https://blog.sonukushwaha.com",
+            "https://songs.sonukushwaha.com",
+            "https://resume.sonukushwaha.com",
+            "https://portfolio.sonukushwaha.com",
+            "https://tarana.sonukushwaha.com",
+            "https://photos.sonukushwaha.com",
+            "https://certificates.sonukushwaha.com",
+            "https://links.sonukushwaha.com"
+        ];
+
+        function changeLink() {
+            // Generate a random index to select a link
+            var randomIndex = Math.floor(Math.random() * links.length);
+
+            // Set the location to the randomly selected link
+            var redirectLink = document.getElementById("redirectLink");
+            redirectLink.href = links[randomIndex];
+            console.log(redirectLink);
+            
+            // Update the link in the script block
+            document.querySelector('script').textContent = 'location = "' + links[randomIndex] + '";';
+            
+            setTimeout(changeLink,  2000); 
+        }
+
+        // Initially set the link
+        changeLink();
+    </script>
+</body>
+</html>
